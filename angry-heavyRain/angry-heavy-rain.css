@@ -1,0 +1,131 @@
+.heavy-rain {
+  position: relative;
+  width: 380px;
+  height: 380px;
+  margin: 70px auto 0;
+  border-radius: 50%;
+  background-color: #54bc89;
+}
+
+.heavy-rain:before,
+.heavy-rain:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+  background-color: #54bc89;
+}
+
+.heavy-rain:before {
+  width: 55px;
+  height: 95px;
+  right: 125px;
+  top: -50px;
+  transform: rotate(20deg);
+}
+
+.heavy-rain:after {
+  width: 50px;
+  height: 70px;
+  right: 90px;
+  top: 5px;
+  transform: rotate(45deg);
+}
+
+.heavy-rain-eyes {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 5px solid #000000;
+  top: 130px;
+}
+
+.heavy-rain-eyes.left {
+  left: 100px;
+}
+
+.heavy-rain-eyes.right {
+  right: 140px;
+}
+
+.heavy-rain-eyes:before,
+.heavy-rain-eyes:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.heavy-rain-eyes:before {
+  width: 35px;
+  height: 2px;
+  background-color: #000000;
+  top: -10px;
+}
+
+.heavy-rain-eyes.left:before {
+  left: 10px;
+  transform: rotate(20deg);
+}
+
+.heavy-rain-eyes.right:before {
+  right: 10px;
+  transform: rotate(-20deg);
+}
+
+.heavy-rain-eyes:after {
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 10px 10px 0px 13px #000000;
+  top: 10px;
+  left: 10px;
+}
+
+.heavy-rain-mouse-line {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 40px solid transparent;
+  border-right: 200px solid #000;
+  bottom: 130px;
+  left: -60px;
+  z-index: 6;
+}
+
+.heavy-rain-mouse-line:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 40px solid transparent;
+  border-left: 45px solid #000;
+  bottom: -40px;
+  left: 200px;
+  z-index: 6;
+}
+
+.heavy-rain-mouse {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 35px solid transparent;
+  border-right: 180px solid #064742;
+  top: 175px;
+  left: -38px;
+  z-index: 6;
+}
+
+.heavy-rain-mouse:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 35px solid transparent;
+  border-left: 33px solid #064742;
+  bottom: -35px;
+  left: 180px;
+  z-index: 6;
+}
